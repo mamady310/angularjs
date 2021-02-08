@@ -7,15 +7,8 @@
 </head>
 <body ng-app="AngularApp">
     <div ng-controller="HelloController">
-        <input type="text" ng-model = "txtname">
-        <p>
-            <h1 strong>Below are the Marks obtained by {{ name }}</h1><br>
-         <ul>
-             <li>  {{ marks[0] }} </li>
-             <li>  {{ marks[1] }}  </li>
-             <li>  {{ marks[2] }}  </li>
-             <li>  {{ marks[3] }}  </li>
-         </ul>
+        <input type="text" ng-model = "what">
+        <p>your username: {{ what }}</p>
     </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
 <script src="app.js"></script>
