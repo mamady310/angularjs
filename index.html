@@ -9,11 +9,13 @@
     <div ng-controller="HelloController">
         <input type="text" ng-model = "txtname">
         <p>
-            key1: {{ expression.key1}} <br>
-            key2: {{ expression.key2}} <br>
-            key3: {{ expression.key3}} <br>
-        </p>
-
+            <h1 strong>Below are the Marks obtained by {{ name }}</h1><br>
+         <ul>
+             <li>  {{ marks[0] }} </li>
+             <li>  {{ marks[1] }}  </li>
+             <li>  {{ marks[2] }}  </li>
+             <li>  {{ marks[3] }}  </li>
+         </ul>
     </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
 <script src="app.js"></script>
