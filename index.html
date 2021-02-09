@@ -5,15 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body ng-app="AngularApp" ng-init="employees =['sarah', 'tom', 'mike', 'alexa']">
+<body ng-app="AngularApp">
     <div ng-controller="HelloController">
         <h1 strong> Angular Application</h1>
-        <input type="text" ng-model="output">
-        <h3>{{ output}}</h3>
-       <li ng-repeat="name in employees">
-           {{ name }}
-       </li>
-    </div>
+        Enter number 1: <input type="text" ng-model='number1'> <br>
+        Enter number 2: <input type="text" ng-model='number2'>
+        <p>Multiplication: {{ number1 * number2}}</p>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
 <script src="app.js"></script>
 </body>
