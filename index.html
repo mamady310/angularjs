@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body ng-app="AngularApp">
+<body ng-app="AngularApp" ng-init="employees =['sarah', 'tom', 'mike', 'alexa']">
     <div ng-controller="HelloController">
-        <input type="text" ng-model = "what">
-        <p>your username: {{ what }}</p>
+        <h1 strong> Angular Application</h1>
+        <input type="text" ng-model="output">
+        <h3>{{ output}}</h3>
+       <li ng-repeat="name in employees">
+           {{ name }}
+       </li>
     </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
 <script src="app.js"></script>
