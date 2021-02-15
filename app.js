@@ -1,7 +1,25 @@
-var myApp = angular.module("AngularApp", []);
+var app = angular.module("AngularshowhideApp", []);
 
-myApp.controller("HelloController", function($scope){
-$scope.name = "Sally"
-$scope.marks = [43 , 49, 49, 44];
+app.controller('showhidectrl', function ($scope) {
+
+$scope.showval = true;
+$scope.hideval = false;
+
+$scope.isShowHide = function (param) {
+
+if (param == "show") {
+    $scope.showval = true;
+    $scope.hideval = true;
+}
+else if (param == "hide") {
+    $scope.showval = false;
+    $scope.hideval = false;
+}
+else {
+    $scope.showval = true;
+    $scope.hideval = false;
+}
+
+}
+
 });
-
